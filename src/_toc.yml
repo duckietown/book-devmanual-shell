@@ -4,21 +4,45 @@
 format: jb-book
 root: intro
 parts:
-    - caption: PART_ONE
+    - caption: Introduction
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
-            sections:
-                - file: part_1/chapter_a/section_1
-    - caption: PART_TWO
+          - file: introduction/about
+#            talk about the shell and why it was developed
+          - file: introduction/installation
+#            guide users through the installation process on different ODes
+          - file: introduction/get-started
+#            first setup of the shell, migrations, token
+          - file: introduction/commands
+#            talk about the core commands (embedded command set)
+    - caption: Basics
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_2/chapter_b/index
+          - file: basics/features
+#            billboards, bash-completion,
+          - file: basics/settings
+#            explain what the shell settings are, how to change them and what effect they have
+          - file: basics/profiles
+#            explain the concept of shell profiles, when to use different profiles, how-to create, edit, remove
+          - file: basics/command-sets
+#            explain the concept of command-sets, how to install/remove more command sets
+          - file: basics/secrets
+#            explain the role of profile secrets, how to update them, etc
+    - caption: Advanced
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: advanced/command-sets/index
+#            how to create, configure, and publish command sets
             sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
+                - file: advanced/command-set/create
+                - file: advanced/command-set/configure
+                - file: advanced/command-set/publish
+          - file: advanced/command/index
+#            how to create, configure, and publish commands
             sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+                - file: advanced/command/create
+                - file: advanced/command/configure
+                - file: advanced/command/publish
