@@ -37,9 +37,9 @@ parts:
           - file: advanced/command-sets/index
 #            how to create, configure, and publish command sets
             sections:
-                - file: advanced/command-set/create
-                - file: advanced/command-set/configure
-                - file: advanced/command-set/publish
+                - file: advanced/command-sets/create
+                - file: advanced/command-sets/configure
+                - file: advanced/command-sets/publish
           - file: advanced/command/index
 #            how to create, configure, and publish commands
             sections:
